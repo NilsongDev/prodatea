@@ -1,0 +1,84 @@
+.navbar-toggler {
+  background: none;
+  border: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 4px 0 4px 0;
+  transition: all 0.2s;
+}
+
+.navbar-dark .navbar-toggler .icon-bar {
+  background: #ffffff;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .icon-bar:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
+  transform: rotate(0);
+}
+
+
+
+
+.navbar-toggler {
+  transition: background-color 0.9s ease-in-out;
+
+}
+
+.navbar-toggler:hover {
+  background-color: #ddd; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+.navbar-toggler[aria-expanded="true"] {
+  background-color: #aaa; /* Cambia el color cuando el Navbar está expandido */
+}
+
+
+
+
+
+/* Estilo inicial para el dropdown */
+.dropnav .dropdown-menu {
+ 
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  background-color: yellowgreen;
+}
+
+/* Mostrar el dropdown con suavidad */
+.dropnav.show .dropdown-menu {
+  opacity: 1;
+  max-height: 200px; /* Altura máxima ajustable según sea necesario */
+}
